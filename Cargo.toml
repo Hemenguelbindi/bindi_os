@@ -1,0 +1,14 @@
+[package]
+name = "bindi_os"
+version = "0.1.0"
+edition = "2021"
+authors = ["Karpov Victor <nilafe4@gmail.com>"]
+
+[profile.dev]
+panic ="abort"
+
+[profile.release]
+panic = "abort"
+
+[unstable]
+build-std = ["core", "compiler_builtins"]
